@@ -8,5 +8,6 @@ namespace CS_3280_Group_9_Project.Search
 {
     internal class clsSearchSQL
     {
+        
     }
 }
