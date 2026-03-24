@@ -72,3 +72,4 @@ C:\Users\mahlo\Documents\GitHub\CS-3280-Group-9-Project\obj\Debug\net8.0-windows
 C:\Users\mahlo\Documents\GitHub\CS-3280-Group-9-Project\obj\Debug\net8.0-windows\CS-3280-Group-9-Project.pdb
 C:\Users\mahlo\Documents\GitHub\CS-3280-Group-9-Project\obj\Debug\net8.0-windows\CS-3280-Group-9-Project.genruntimeconfig.cache
 C:\Users\mahlo\Documents\GitHub\CS-3280-Group-9-Project\obj\Debug\net8.0-windows\ref\CS-3280-Group-9-Project.dll
+C:\Users\mahlo\Documents\GitHub\CS-3280-Group-9-Project\obj\Debug\net8.0-windows\CS-3280-Group-9-Project.sourcelink.json
