@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 
 namespace CS_3280_Group_9_Project.Search
 {
+    using static clsSearchLogic;
+
     /// <summary>
     /// Interaction logic for wndSearch.xaml
     /// </summary>
@@ -27,12 +29,14 @@ namespace CS_3280_Group_9_Project.Search
         public int SelectedInvoiceID = -1;
 
         /// <summary>
-        /// Constructor for the seach window
+        /// Constructor for the seach window, calls the SQL class to get all invoices and display them
         /// </summary>
         public wndSearch()
         {
             InitializeComponent();
             warningFlag.Content = "";
+            clsSearchLogic sL = new clsSearchLogic();
+            invoiceListDisplay.ItemsSource = sL.GetInvoiceList();
         }
 
         /// <summary>
