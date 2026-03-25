@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CS-3280-Group-9-Project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef5a0fe5d30ed762622833b1446b5b0ec3f98034")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+432e3fac1b0785b8424e40f01e419fab5786350e")]
->>>>>>> feature/search
 [assembly: System.Reflection.AssemblyProductAttribute("CS-3280-Group-9-Project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CS-3280-Group-9-Project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

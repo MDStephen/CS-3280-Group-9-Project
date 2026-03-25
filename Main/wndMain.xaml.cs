@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 ﻿using CS_3280_Group_9_Project.Items;
 using CS_3280_Group_9_Project.Search;
-=======
-﻿using CS_3280_Group_9_Project.Search;
->>>>>>> feature/search
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +32,6 @@ namespace CS_3280_Group_9_Project.Main
 
         public wndMain()
         {
-<<<<<<< HEAD
             try
             {
                 InitializeComponent();
@@ -149,17 +144,6 @@ namespace CS_3280_Group_9_Project.Main
         {
             //unlock invoice controls
             //CreateMode = true;
-=======
-            InitializeComponent();
-
-            // For testing purposes only, remove before merging
-            wndSearch window = new wndSearch();
-            if (window.ShowDialog() == true) // if the user force closes the child window showDialog will return false
-            {
-                // this retrieves the value stored in the search window object's parameter named SelectedInvoiceID
-                int invoiceID = window.SelectedInvoiceID;
-            }
->>>>>>> feature/search
         }
     }
 }
