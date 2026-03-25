@@ -42,6 +42,10 @@ namespace CS_3280_Group_9_Project.Main
                 bCreateMode = false;
                 bEditMode = false;
                 invoiceID = 0;
+                wndMainSearch = new wndSearch();
+
+                wndMainItems = new wndItems();
+
             }
             catch (Exception ex)
             {
@@ -66,8 +70,12 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainSearch = new wndSearch();
                 wndMainSearch.ShowDialog();
+
+                /* if (window.ShowDialog() == true)
+                {
+                    int invoiceID = window.SelectedInvoiceID;
+                }*/
                 //once the search window is closed the invoiceID should be set in the search window's closing event.
                 //SelectInvoice(ToString(invoiceID))
 
@@ -88,7 +96,6 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainItems = new wndItems();
                 wndMainItems.ShowDialog();
                 //need to update cmbItems if the items changed in the items window.
                 //For now assuming that the wndItems will be coded to update the database then i'll grab the items from there.

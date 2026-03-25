@@ -23,5 +23,11 @@ namespace CS_3280_Group_9_Project.Items
         {
             InitializeComponent();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.Hide();
+            e.Cancel = true;
+        }
     }
 }
