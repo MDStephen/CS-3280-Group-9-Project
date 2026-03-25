@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "On1ZCklOdIw=",
+  "dgSpecHash": "2uk5btHceW4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\CS-3280-Group-9-Project.csproj",
+  "projectFilePath": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\CS-3280-Group-9-Project.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.5\\system.configuration.configurationmanager.10.0.5.nupkg.sha512",
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.data.oledb\\10.0.5\\system.data.oledb.10.0.5.nupkg.sha512",
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.5\\system.diagnostics.eventlog.10.0.5.nupkg.sha512",
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.5\\system.diagnostics.performancecounter.10.0.5.nupkg.sha512",
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.5\\system.security.cryptography.protecteddata.10.0.5.nupkg.sha512",
-    "C:\\Users\\mahlo\\.nuget\\packages\\system.threading.accesscontrol\\10.0.5\\system.threading.accesscontrol.10.0.5.nupkg.sha512"
+    "C:\\Users\\nrand\\.nuget\\packages\\system.configuration.configurationmanager\\10.0.5\\system.configuration.configurationmanager.10.0.5.nupkg.sha512",
+    "C:\\Users\\nrand\\.nuget\\packages\\system.data.oledb\\10.0.5\\system.data.oledb.10.0.5.nupkg.sha512",
+    "C:\\Users\\nrand\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.5\\system.diagnostics.eventlog.10.0.5.nupkg.sha512",
+    "C:\\Users\\nrand\\.nuget\\packages\\system.diagnostics.performancecounter\\10.0.5\\system.diagnostics.performancecounter.10.0.5.nupkg.sha512",
+    "C:\\Users\\nrand\\.nuget\\packages\\system.security.cryptography.protecteddata\\10.0.5\\system.security.cryptography.protecteddata.10.0.5.nupkg.sha512",
+    "C:\\Users\\nrand\\.nuget\\packages\\system.threading.accesscontrol\\10.0.5\\system.threading.accesscontrol.10.0.5.nupkg.sha512"
   ],
   "logs": []
 }
