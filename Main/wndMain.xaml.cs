@@ -22,9 +22,6 @@ namespace CS_3280_Group_9_Project.Main
     /// </summary>
     public partial class wndMain : Window
     {
-        wndSearch wndMainSearch;
-        wndItems wndMainItems;
-        clsMainLogic clsUIMainLogic;
         bool bCreateMode;
         bool bEditMode;
         static int invoiceID;
@@ -42,9 +39,6 @@ namespace CS_3280_Group_9_Project.Main
                 bCreateMode = false;
                 bEditMode = false;
                 invoiceID = 0;
-                wndMainSearch = new wndSearch();
-
-                wndMainItems = new wndItems();
 
             }
             catch (Exception ex)
@@ -70,12 +64,12 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainSearch.ShowDialog();
+                wndSearch searchWindow = new wndSearch();
 
-                /* if (window.ShowDialog() == true)
+                if (searchWindow.ShowDialog() == true)
                 {
-                    int invoiceID = window.SelectedInvoiceID;
-                }*/
+                    int invoiceID = searchWindow.SelectedInvoiceID;
+                }
                 //once the search window is closed the invoiceID should be set in the search window's closing event.
                 //SelectInvoice(ToString(invoiceID))
 
@@ -96,7 +90,11 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainItems.ShowDialog();
+                wndItems itemsWindow = new wndItems();
+                if (itemsWindow.ShowDialog() == true)
+                {
+                    
+                }
                 //need to update cmbItems if the items changed in the items window.
                 //For now assuming that the wndItems will be coded to update the database then i'll grab the items from there.
                 //UpdateItems()

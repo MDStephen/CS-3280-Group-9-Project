@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS_3280_Group_9_Project.Items"
         mc:Ignorable="d"
-        Title="wndItems" Height="450" Width="800" Closing="Window_Closing">
+        Title="wndItems" Height="450" Width="800">
     <Grid>
-        
+        <Label x:Name="lblCode" Content="Code: " HorizontalAlignment="Left" Margin="54,47,0,0" VerticalAlignment="Top" FontSize="19.3"/>
+        <Label x:Name="lblCost" Content="Cost: " HorizontalAlignment="Left" Margin="54,88,0,0" VerticalAlignment="Top" FontSize="19.3"/>
+        <Label x:Name="lblDescription" Content="Description: " HorizontalAlignment="Left" Margin="54,129,0,0" VerticalAlignment="Top" FontSize="19.3"/>
+        <TextBox x:Name="txtbxCode" HorizontalAlignment="Left" Margin="175,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtbxCost" HorizontalAlignment="Left" Margin="175,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBox x:Name="txtbxDescription" HorizontalAlignment="Left" Margin="175,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Button x:Name="btnAdd" Content="Add Item" HorizontalAlignment="Left" Margin="54,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnAdd_Click"/>
+        <Button x:Name="btnEdit" Content="Edit Item" HorizontalAlignment="Left" Margin="175,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnEdit_Click"/>
+        <Button x:Name="btnSave" Content="Save Item" HorizontalAlignment="Left" Margin="290,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnSave_Click"/>
+        <Button x:Name="btnDelete" Content="Delete Item" HorizontalAlignment="Left" Margin="54,322,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,10,10,10"/>
+
     </Grid>
 </Window>

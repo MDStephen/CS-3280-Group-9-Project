@@ -26,7 +26,7 @@ namespace CS_3280_Group_9_Project.Search
         /// <summary>
         /// An integer storing the ID of the selected invoice which will be returned to main (parent window)
         /// </summary>
-        public int SelectedInvoiceID = -1;
+        public int SelectedInvoiceID = 1;
 
         /// <summary>
         /// Constructor for the seach window, calls the SQL class to get all invoices and display them
