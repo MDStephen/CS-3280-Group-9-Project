@@ -58,8 +58,7 @@
               "ToolTip": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml",
               "RelativeToolTip": "Search\\wndSearch.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-25T01:20:50.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T01:20:50.577Z"
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Search\\wndSearch.xaml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T00:00:39.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T00:00:39.198Z"
             },
             {
               "$type": "Document",
@@ -84,8 +82,7 @@
               "RelativeToolTip": "Search\\clsSearchSQL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T23:46:54.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T23:46:54.356Z"
             }
           ]
         }
