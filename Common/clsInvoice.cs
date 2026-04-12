@@ -4,15 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CS_3280_Group_9_Project.Common
+namespace CS_3280_Group_9_Project
 {
     internal class clsInvoice
     {
-        private string sInvoiceNum;
-        private string sInvoiceDate;
-        private string sTotalCost;
+        /// <summary>
+        /// Invoice ID
+        /// </summary>
+        public string sInvoiceNum;
+        /// <summary>
+        /// Invoice Date
+        /// </summary>
+        public string sInvoiceDate;
+        /// <summary>
+        /// Total Cost
+        /// </summary>
+        public string sTotalCost;
 
-        //make constructor for clsInvoice
-        //override tostring
+        /// <summary>
+        /// Constructor for clsInvoice
+        /// </summary>
+        /// <param name="sInvoiceNum"></param>
+        /// <param name="sInvoiceDate"></param>
+        /// <param name="sTotalCost"></param>
+        public clsInvoice(string sInvoiceNum, string sInvoiceDate, string sTotalCost)
+        {
+            this.sInvoiceNum = sInvoiceNum;
+            this.sInvoiceDate = sInvoiceDate;
+            this.sTotalCost = sTotalCost;
+        }
+        //override tostring?
     }
 }
