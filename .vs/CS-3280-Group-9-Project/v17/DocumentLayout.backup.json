@@ -1,12 +1,99 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\mahlo\\documents\\github\\cs-3280-group-9-project\\main\\wndmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:main\\wndmain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\mahlo\\documents\\github\\cs-3280-group-9-project\\search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\mahlo\\documents\\github\\cs-3280-group-9-project\\items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\mahlo\\documents\\github\\cs-3280-group-9-project\\main\\wndmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:main\\wndmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "wndItems.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Items\\wndItems.xaml.cs",
+              "RelativeDocumentMoniker": "Items\\wndItems.xaml.cs",
+              "ToolTip": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Items\\wndItems.xaml.cs",
+              "RelativeToolTip": "Items\\wndItems.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T21:47:22.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "wndSearch.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml.cs",
+              "RelativeDocumentMoniker": "Search\\wndSearch.xaml.cs",
+              "ToolTip": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml.cs",
+              "RelativeToolTip": "Search\\wndSearch.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T21:43:44.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "wndMain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml.cs",
+              "RelativeDocumentMoniker": "Main\\wndMain.xaml.cs",
+              "ToolTip": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml.cs",
+              "RelativeToolTip": "Main\\wndMain.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwF8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T21:36:02.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "wndMain.xaml",
+              "DocumentMoniker": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml",
+              "RelativeDocumentMoniker": "Main\\wndMain.xaml",
+              "ToolTip": "C:\\Users\\mahlo\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml",
+              "RelativeToolTip": "Main\\wndMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-25T21:35:59.022Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

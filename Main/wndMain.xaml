@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="wndMain" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="143*"/>
+
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cmbItems" HorizontalAlignment="Left" Margin="119,227,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbItems_SelectionChanged"/>
+        <DataGrid x:Name="dgItems" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="361,37,17,10" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnAdd" Content="Add Item" HorizontalAlignment="Left" Margin="257,229,0,0" VerticalAlignment="Top" Click="btnAdd_Click"/>
+        <Button x:Name="btnRemove" Content="Remove Item" HorizontalAlignment="Left" Margin="257,267,0,0" VerticalAlignment="Top" Click="btnRemove_Click"/>
+        <Button x:Name="btnEdit" Content="Edit Invoice" HorizontalAlignment="Left" Margin="159,37,0,0" VerticalAlignment="Top" Click="btnEdit_Click"/>
+        <Button x:Name="btnSave" Content="Save Invoice" HorizontalAlignment="Left" Margin="257,37,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
+        <Label Content="Date: " HorizontalAlignment="Left" Margin="118,143,0,0" VerticalAlignment="Top"/>
+        <Label Content="Invoice Number:" HorizontalAlignment="Left" Margin="70,86,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total Cost: " HorizontalAlignment="Left" Margin="98,112,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCost" Content="Item Cost: " HorizontalAlignment="Left" Margin="57,191,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="164,147,0,0" TextWrapping="Wrap" Text="MM/DD/YYYY" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblDateError" Content="Please enter a valid date!" HorizontalAlignment="Left" Margin="89,274,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Button x:Name="btnCreate" Content="Create Invoice" HorizontalAlignment="Left" Margin="36,37,0,0" VerticalAlignment="Top" Click="btnCreate_Click"/>
+        <StackPanel Margin="0,0,390,369">
+            <Menu x:Name="menuWindows" Height="21" Width="124">
+                <MenuItem Header="Search" Click="MenuSearch_Click"/>
+                <MenuItem Header="Edit Items" Click="MenuEdit_Click"/>
+            </Menu>
+        </StackPanel>
+        <Label Content="Items on invoice" HorizontalAlignment="Left" Margin="361,7,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
