@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:CS_3280_Group_9_Project.Search"
         mc:Ignorable="d"
         Title="wndSearch" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label      Content="Invoice Number:"/>
+            <ComboBox   MinWidth="100"  MaxHeight="25"  Margin="0, 10, 0, 0" VerticalAlignment="Top" />
+            <Label      Content="Invoice Date:"/>
+            <ComboBox   MinWidth="100"  MaxHeight="25"  Margin="0, 10, 0, 0" VerticalAlignment="Top" />
+            <Label      Content="Total Costs:"/>
+            <ComboBox   MinWidth="100"  MaxHeight="25"  Margin="0, 10, 0, 0" VerticalAlignment="Top" />
+        </StackPanel>
+        <ListBox x:Name="invoiceListDisplay" Grid.Row="1"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Content="Clear Filters"     Margin="0, 10, 10, 0" Padding="5" MaxHeight="50" VerticalAlignment="Top"/>
+            <Button Content="Select Invoice"    Margin="0, 10, 10, 0" Padding="5" MaxHeight="50" VerticalAlignment="Top" Click="clkSelectInvoice"/>
+            <Label x:Name="warningFlag" Content="Warning Flag!"      Margin="0, 10, 10, 0" VerticalAlignment="Top"/>
+        </StackPanel>
     </Grid>
 </Window>
