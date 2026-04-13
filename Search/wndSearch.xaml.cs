@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 namespace CS_3280_Group_9_Project.Search
 {
     using static clsSearchLogic;
+    using static System.Runtime.InteropServices.JavaScript.JSType;
 
     /// <summary>
     /// Interaction logic for wndSearch.xaml
@@ -29,6 +30,11 @@ namespace CS_3280_Group_9_Project.Search
         public int SelectedInvoiceID = 1;
 
         /// <summary>
+        /// A list for populating with data from the database
+        /// </summary>
+        public List<(int ID, string Date, int TotalCost)> invoiceList;
+
+        /// <summary>
         /// Constructor for the seach window, calls the SQL class to get all invoices and display them
         /// </summary>
         public wndSearch()
@@ -36,7 +42,26 @@ namespace CS_3280_Group_9_Project.Search
             InitializeComponent();
             warningFlag.Content = "";
             clsSearchLogic sL = new clsSearchLogic();
-            invoiceListDisplay.ItemsSource = sL.GetInvoiceList();
+            invoiceList = sL.GetInvoiceList();
+            invoiceListDisplay.ItemsSource = invoiceList;
+
+            // Initialize the search limiting combo boxes
+            invoiceList = invoiceList.OrderBy(x => x.TotalCost).ToList();
+
+            invoice_number_combo_box.Items.Add("All");
+            invoice_date_combo_box.Items.Add("All");
+            total_cost_combo_box.Items.Add("All");
+
+            invoice_number_combo_box.SelectedValue = "All";
+            invoice_date_combo_box.SelectedValue = "All";
+            total_cost_combo_box.SelectedValue = "All";
+
+            for (int i = 0; i < invoiceList.Count; i++) 
+            {
+                invoice_number_combo_box.Items.Add(invoiceList[i].ID.ToString());
+                invoice_date_combo_box.Items.Add(invoiceList[i].Date);
+                total_cost_combo_box.Items.Add(invoiceList[i].TotalCost.ToString());
+            }
         }
 
         /// <summary>
@@ -58,6 +83,54 @@ namespace CS_3280_Group_9_Project.Search
                 this.DialogResult = true;
                 this.Close();
             }
+        }
+
+        /// <summary>
+        /// A function which limits the list display to the combobox search limiting selected values
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void limitSearch(object sender, SelectionChangedEventArgs e)
+        {
+            if (invoice_number_combo_box.SelectedItem == null || invoice_date_combo_box.SelectedItem == null || total_cost_combo_box.SelectedItem == null)
+            {
+                return;
+            }
+
+            int id;
+            int total_cost;
+            string date;
+
+            if ((string)invoice_number_combo_box.SelectedItem == "All")
+            {
+                id = -1;
+            }
+            else
+            {
+                id = int.Parse(invoice_number_combo_box.SelectedItem.ToString());
+            }
+            if((string)invoice_date_combo_box.SelectedItem == "All")
+            {
+                date = null;
+            }
+            else
+            {
+                date = (string)invoice_date_combo_box.SelectedItem;
+            }
+            if ((string)total_cost_combo_box.SelectedItem == "All")
+            {
+                total_cost = -1;
+            }
+            else
+            {
+                total_cost = int.Parse(total_cost_combo_box.SelectedItem.ToString());
+            }
+            
+            invoiceListDisplay.ItemsSource = invoiceList
+                .Where(x => (id == -1 || x.ID == id)
+                         && (date == null || x.Date == date)
+                         && (total_cost == -1 || x.TotalCost == total_cost))
+                .ToList();
         }
     }
 }
