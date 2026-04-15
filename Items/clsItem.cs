@@ -9,9 +9,9 @@ namespace CS_3280_Group_9_Project.Items
     internal class clsItem
     {
         /// <summary>
-        /// Integer property representing the item's code
+        /// String property representing the item's code
         /// </summary>
-        public int iItemCode { get; set; }
+        public string sItemCode { get; set; }
 
         /// <summary>
         /// Decimal property representing the item's cost

@@ -38,7 +38,7 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-                string sSQL = "select distinct(InvoiceNum) from LineItems where ItemCode = " + itemToSearchFor.iItemCode;
+                string sSQL = $"select distinct(InvoiceNum) from LineItems where ItemCode = '{itemToSearchFor.sItemCode}'";
                 return sSQL;
             }
             catch (Exception ex)
@@ -59,7 +59,7 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-                string sSQL = "Update ItemDesc Set ItemDesc = '" + newItem.sItemDescription + "', Cost = " + newItem.dItemCost + " where ItemCode = '" + oldItem.iItemCode + "'";
+                string sSQL = "Update ItemDesc Set ItemDesc = '" + newItem.sItemDescription + "', Cost = " + newItem.dItemCost + " where ItemCode = '" + oldItem.sItemCode + "'";
                 return sSQL;
             }
             catch (Exception ex)
@@ -79,7 +79,7 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-                string sSQL = "Insert into ItemDesc(ItemCode, ItemDesc, Cost) Values('" + newItem.iItemCode + "', '" + newItem.sItemDescription + "', " + newItem.dItemCost + ")";
+                string sSQL = "Insert into ItemDesc(ItemCode, ItemDesc, Cost) Values('" + newItem.sItemCode + "', '" + newItem.sItemDescription + "', " + newItem.dItemCost + ")";
                 return sSQL;
             }
             catch (Exception ex)
@@ -99,7 +99,7 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-                string sSQL = "Delete from ItemDesc Where ItemCode = '" + itemToDelete.iItemCode + "'";
+                string sSQL = "Delete from ItemDesc Where ItemCode = '" + itemToDelete.sItemCode + "'";
                 return sSQL;
             }
             catch (Exception ex)
