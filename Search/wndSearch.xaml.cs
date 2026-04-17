@@ -162,8 +162,11 @@ namespace CS_3280_Group_9_Project.Search
         {
             try
             {
-                var item = ((int ID, string Date, int TotalCost))invoiceListDisplay.SelectedItem;
-                SelectedInvoiceID = item.ID;
+                if (invoiceListDisplay.SelectedItem != null)
+                {
+                    var item = ((int ID, string Date, int TotalCost))invoiceListDisplay.SelectedItem;
+                    SelectedInvoiceID = item.ID;
+                }
             }
             catch (Exception ex)
 {
