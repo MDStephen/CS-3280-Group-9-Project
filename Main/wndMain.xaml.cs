@@ -23,23 +23,24 @@ namespace CS_3280_Group_9_Project.Main
     /// </summary>
     public partial class wndMain : Window
     {
-<<<<<<< Updated upstream
+
         wndSearch wndMainSearch;
         wndItems wndMainItems;
         clsMainLogic clsUIMainLogic;
         bool bCreateMode;
         bool bEditMode;
-=======
+
         /// <summary>
         /// Current invoice ID.
         /// </summary>
->>>>>>> Stashed changes
         static int invoiceID;
 
         /// <summary>
         /// Business logic for the window
         /// </summary>
         clsMainLogic UIMainLogic;
+
+
 
         /// <summary>
         /// Used to determine the behavior of the save button.
@@ -69,11 +70,10 @@ namespace CS_3280_Group_9_Project.Main
                 
 
                 invoiceID = 0;
-<<<<<<< Updated upstream
                 wndMainSearch = new wndSearch();
 
                 wndMainItems = new wndItems();
-=======
+
                 eCurrentMode = InvoiceMode.None;
                 btnEdit.IsEnabled = false;
                 btnSave.IsEnabled = false;
@@ -85,7 +85,6 @@ namespace CS_3280_Group_9_Project.Main
                 UIMainLogic = new clsMainLogic();
                 cmbItems.ItemsSource = UIMainLogic.GetAllItems();
 
->>>>>>> Stashed changes
 
             }
             catch (Exception ex)
@@ -120,13 +119,12 @@ namespace CS_3280_Group_9_Project.Main
 
                 /* if (window.ShowDialog() == true)
                 {
-<<<<<<< Updated upstream
                     int invoiceID = window.SelectedInvoiceID;
                 }*/
                 //once the search window is closed the invoiceID should be set in the search window's closing event.
                 //SelectInvoice(ToString(invoiceID))
-=======
-                    int invoiceID = searchWindow.SelectedInvoiceID;
+                if (wndMainSearch.ShowDialog() == true) { 
+                    int invoiceID = wndMainSearch.SelectedInvoiceID;
 
                     UIMainLogic.SelectInvoice(invoiceID.ToString());
                     dgItems.DataContext = UIMainLogic.GetInvoiceItems();
@@ -136,9 +134,8 @@ namespace CS_3280_Group_9_Project.Main
                     txtDate.Text = UIMainLogic.clsCurrInvoice.sInvoiceDate;
                     btnEdit.IsEnabled = true;
                     DisableControls();
-                }
+            }
                 
->>>>>>> Stashed changes
 
             }
             catch (Exception ex)
@@ -157,19 +154,17 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-<<<<<<< Updated upstream
                 wndMainItems.ShowDialog();
                 //need to update cmbItems if the items changed in the items window.
                 //For now assuming that the wndItems will be coded to update the database then i'll grab the items from there.
                 //UpdateItems()
-=======
+
                 wndItems itemsWindow = new wndItems();
                 if (itemsWindow.ShowDialog() == true)
                 {
                     UIMainLogic.UpdateItems();
                 }
                 
->>>>>>> Stashed changes
 
             }
             catch (Exception ex)

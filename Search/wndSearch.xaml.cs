@@ -19,23 +19,26 @@ namespace CS_3280_Group_9_Project.Search
     /// </summary>
     public partial class wndSearch : Window
     {
+        public int SelectedInvoiceID;
+
         public wndSearch()
         {
             InitializeComponent();
+            SelectedInvoiceID = 0;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-<<<<<<< Updated upstream
             this.Hide();
             e.Cancel = true;
-=======
+
+
             // Call the interface to send to the main window what invoice needs to be opened for viewing/editing
             // Make sure that an invoice has been selected and that it is valid
             if (SelectedInvoiceID == -1)
             {
                 // Flag a selection is needed warning
-                warningFlag.Content = "Please Select an Invoice First!";
+                //warningFlag.Content = "Please Select an Invoice First!";
             }
             else
             {
@@ -43,7 +46,6 @@ namespace CS_3280_Group_9_Project.Search
                 this.DialogResult = true;
                 this.Close();
             }
->>>>>>> Stashed changes
         }
     }
 }

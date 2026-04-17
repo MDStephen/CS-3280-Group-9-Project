@@ -36,3 +36,4 @@ C:\Users\nrand\OneDrive\Documents\GitHub\CS-3280-Group-9-Project\obj\x86\Debug\n
 C:\Users\nrand\OneDrive\Documents\GitHub\CS-3280-Group-9-Project\obj\x86\Debug\net8.0-windows\CS-3280-Group-9-Project.pdb
 C:\Users\nrand\OneDrive\Documents\GitHub\CS-3280-Group-9-Project\obj\x86\Debug\net8.0-windows\CS-3280-Group-9-Project.genruntimeconfig.cache
 C:\Users\nrand\OneDrive\Documents\GitHub\CS-3280-Group-9-Project\obj\x86\Debug\net8.0-windows\ref\CS-3280-Group-9-Project.dll
+C:\Users\nrand\OneDrive\Documents\GitHub\CS-3280-Group-9-Project\obj\x86\Debug\net8.0-windows\Theme.baml

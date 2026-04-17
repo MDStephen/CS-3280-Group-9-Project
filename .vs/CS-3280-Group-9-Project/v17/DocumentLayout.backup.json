@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\main\\wndmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:main\\wndmain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\clsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:clsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\items\\wnditems.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -23,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\wndsearch.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\wndsearch.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\search\\clssearchsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\clssearchsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\main\\wndmain.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
@@ -35,8 +31,16 @@
       "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:main\\clsmainlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\search\\clssearchsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:search\\clssearchsql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\clsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:clsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|solutionrelative:items\\wnditems.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787C769A-253C-4444-BE54-CAA6442EFCCC}|CS-3280-Group-9-Project.csproj|c:\\users\\nrand\\onedrive\\documents\\github\\cs-3280-group-9-project\\search\\clssearchlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-17T20:03:12.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "wndItems.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Items\\wndItems.xaml.cs",
               "RelativeDocumentMoniker": "Items\\wndItems.xaml.cs",
@@ -82,35 +98,36 @@
               "RelativeToolTip": "Items\\wndItems.xaml.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAvwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T06:56:38.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T06:56:38.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "wndItems.xaml",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Items\\wndItems.xaml",
               "RelativeDocumentMoniker": "Items\\wndItems.xaml",
               "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Items\\wndItems.xaml",
               "RelativeToolTip": "Items\\wndItems.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-25T06:56:32.333Z"
+              "WhenOpened": "2026-03-25T06:56:32.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "wndSearch.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml.cs",
               "RelativeDocumentMoniker": "Search\\wndSearch.xaml.cs",
-              "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml.cs",
-              "RelativeToolTip": "Search\\wndSearch.xaml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAvwB0AAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml.cs*",
+              "RelativeToolTip": "Search\\wndSearch.xaml.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAvwBUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T06:56:04.945Z"
+              "WhenOpened": "2026-03-25T06:56:04.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "clsItem.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Common\\clsItem.cs",
               "RelativeDocumentMoniker": "Common\\clsItem.cs",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "clsInvoice.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Common\\clsInvoice.cs",
               "RelativeDocumentMoniker": "Common\\clsInvoice.cs",
@@ -134,19 +151,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "wndMain.xaml.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml.cs",
               "RelativeDocumentMoniker": "Main\\wndMain.xaml.cs",
               "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml.cs",
               "RelativeToolTip": "Main\\wndMain.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAACwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAArwBoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T22:37:52.827Z"
+              "WhenOpened": "2026-03-24T22:37:52.827Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "clsDataAccess.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\clsDataAccess.cs",
               "RelativeDocumentMoniker": "clsDataAccess.cs",
@@ -154,23 +172,23 @@
               "RelativeToolTip": "clsDataAccess.cs",
               "ViewState": "AgIAAOIAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T22:12:38.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-24T22:12:38.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "wndSearch.xaml",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml",
               "RelativeDocumentMoniker": "Search\\wndSearch.xaml",
               "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\wndSearch.xaml",
               "RelativeToolTip": "Search\\wndSearch.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-24T22:01:30.409Z"
+              "WhenOpened": "2026-03-24T22:01:30.409Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "clsSearchSQL.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\clsSearchSQL.cs",
               "RelativeDocumentMoniker": "Search\\clsSearchSQL.cs",
@@ -178,11 +196,12 @@
               "RelativeToolTip": "Search\\clsSearchSQL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T22:01:29.476Z"
+              "WhenOpened": "2026-03-24T22:01:29.476Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "clsSearchLogic.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Search\\clsSearchLogic.cs",
               "RelativeDocumentMoniker": "Search\\clsSearchLogic.cs",
@@ -194,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "wndMain.xaml",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\wndMain.xaml",
               "RelativeDocumentMoniker": "Main\\wndMain.xaml",
@@ -206,19 +225,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "clsMainLogic.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\clsMainLogic.cs",
               "RelativeDocumentMoniker": "Main\\clsMainLogic.cs",
               "ToolTip": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\clsMainLogic.cs",
               "RelativeToolTip": "Main\\clsMainLogic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T22:01:17.979Z"
+              "WhenOpened": "2026-03-24T22:01:17.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "clsMainSQL.cs",
               "DocumentMoniker": "C:\\Users\\nrand\\OneDrive\\Documents\\GitHub\\CS-3280-Group-9-Project\\Main\\clsMainSQL.cs",
               "RelativeDocumentMoniker": "Main\\clsMainSQL.cs",
