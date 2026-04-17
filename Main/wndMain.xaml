@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS_3280_Group_9_Project.Main"
         mc:Ignorable="d"
-        Title="wndMain" Height="450" Width="800" Background="#FF333037">
+        Title="wndMain" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF333037"/>
+            <GradientStop Color="#FF141215" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="257*"/>
@@ -13,11 +19,21 @@
 
         </Grid.ColumnDefinitions>
         <ComboBox x:Name="cmbItems" HorizontalAlignment="Left" Margin="119,227,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbItems_SelectionChanged"/>
-        <DataGrid x:Name="dgItems" AutoGenerateColumns="False"  CanUserAddRows="False"
+        <DataGrid x:Name="dgItems" AutoGenerateColumns="False"  CanUserAddRows="False" IsReadOnly="True"
               CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" ItemsSource="{Binding}"
-              CanUserResizeRows="False" CanUserSortColumns="False" SelectionMode="Single" Margin="361,37,17,10" Grid.ColumnSpan="2" Foreground="Black">
+              CanUserResizeRows="False" CanUserSortColumns="False" SelectionMode="Single" Margin="361,37,17,10" Grid.ColumnSpan="2" Foreground="Black" Background="#FF333037">
+            <DataGrid.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9168AF"/>
+                    <GradientStop Color="#FF23182B" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.BorderBrush>
             <DataGrid.Columns>
-                <DataGridTextColumn Width="2*" Header="Code" Binding="{Binding sItemCode}"/>
+                <DataGridTextColumn Width="2*" Header="Code" Binding="{Binding sItemCode}">
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style/>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
                 <DataGridTextColumn Width="10*" Header="Item" Binding="{Binding sItemDesc}"/>
                 <DataGridTextColumn Width="3*" Header="Cost" Binding="{Binding fItemCost}"/>
             </DataGrid.Columns>
