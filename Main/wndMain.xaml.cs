@@ -126,7 +126,7 @@ namespace CS_3280_Group_9_Project.Main
 
                 wndSearch wndMainSearch = new wndSearch();
                 if (wndMainSearch.ShowDialog() == true) { 
-                    int invoiceID = wndMainSearch.SelectedInvoiceID;
+                    invoiceID = wndMainSearch.SelectedInvoiceID;
 
                     UIMainLogic.SelectInvoice(invoiceID.ToString());
                     dgItems.DataContext = UIMainLogic.GetInvoiceItems();
@@ -253,6 +253,7 @@ namespace CS_3280_Group_9_Project.Main
                     }
                     else if (eCurrentMode == InvoiceMode.Edit) //if its an existing invoice, update
                     {
+
                         UIMainLogic.EditInvoice(invoiceID.ToString(), txtDate.Text);
                     }
                     DisableControls();
