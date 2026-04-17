@@ -169,6 +169,7 @@ namespace CS_3280_Group_9_Project.Main
 
                 UIMainLogic.UpdateItems();
 
+                cmbItems.ItemsSource = UIMainLogic.GetAllItems();
 
 
             }
