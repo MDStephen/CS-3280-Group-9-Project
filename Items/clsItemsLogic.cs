@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CS_3280_Group_9_Project.Items
 {
@@ -40,9 +41,15 @@ namespace CS_3280_Group_9_Project.Items
                 {
                     clsItem item = new clsItem
                     {
+<<<<<<< HEAD
                         iItemCode = Convert.ToInt32(row["Item_Code"]),
                         dItemCost = Convert.ToDecimal(row["Item_Cost"]),
                         sItemDescription = row["Item_Description"].ToString()
+=======
+                        sItemCode = row["ItemCode"].ToString(),
+                        dItemCost = Convert.ToDecimal(row["Cost"]),
+                        sItemDescription = row["ItemDesc"].ToString()
+>>>>>>> feature/items
                     }
                     ;
                     items.Add(item);
@@ -144,8 +151,13 @@ namespace CS_3280_Group_9_Project.Items
             try
             {
                 // Create a database
+<<<<<<< HEAD
 
                 clsDataAccess db = new clsDataAccess();
+=======
+                clsDataAccess db = new clsDataAccess();
+
+>>>>>>> feature/items
                 // Get the SQL statement for checking if an item is on an invoice
                 string sSQL = clsItemsSQL.GetInvoicesWithItem(itemToCheck);
 
@@ -165,5 +177,29 @@ namespace CS_3280_Group_9_Project.Items
         }
 
         // Create a method that handles refreshing the data grid once the item list has been updated (added, edited, or deleted)
+<<<<<<< HEAD
+=======
+
+        /// <summary>
+        /// Method do auto populate the next item coded based on the current max item code in the database
+        /// </summary>
+        /// <returns></returns>
+        public static string GetNextItemCode()
+        {
+            string sql = "SELECT MAX(ItemCode) FROM ItemDesc";
+            clsDataAccess db = new clsDataAccess();
+            int iRet = 0;
+
+            DataSet ds = db.ExecuteSQLStatement(sql, ref iRet);
+
+            string maxCode = ds.Tables[0].Rows[0][0].ToString();
+
+            if (string.IsNullOrWhiteSpace(maxCode))
+                return "A"; // first item ever
+
+            char next = (char)(maxCode[0] + 1);
+            return next.ToString();
+        }
+>>>>>>> feature/items
     }
 }
