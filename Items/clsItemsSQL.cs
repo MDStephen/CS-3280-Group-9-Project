@@ -38,11 +38,9 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-<<<<<<< HEAD
-                string sSQL = "select distinct(InvoiceNum) from LineItems where ItemCode = " + itemToSearchFor.iItemCode;
-=======
+
                 string sSQL = $"select distinct(InvoiceNum) from LineItems where ItemCode = '{itemToSearchFor.sItemCode}'";
->>>>>>> feature/items
+
                 return sSQL;
             }
             catch (Exception ex)
@@ -63,11 +61,9 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-<<<<<<< HEAD
-                string sSQL = "Update ItemDesc Set ItemDesc = '" + newItem.sItemDescription + "', Cost = " + newItem.dItemCost + " where ItemCode = '" + oldItem.iItemCode + "'";
-=======
+
                 string sSQL = "Update ItemDesc Set ItemDesc = '" + newItem.sItemDescription + "', Cost = " + newItem.dItemCost + " where ItemCode = '" + oldItem.sItemCode + "'";
->>>>>>> feature/items
+
                 return sSQL;
             }
             catch (Exception ex)
@@ -87,11 +83,9 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-<<<<<<< HEAD
-                string sSQL = "Insert into ItemDesc(ItemCode, ItemDesc, Cost) Values('" + newItem.iItemCode + "', '" + newItem.sItemDescription + "', " + newItem.dItemCost + ")";
-=======
+
                 string sSQL = "Insert into ItemDesc(ItemCode, ItemDesc, Cost) Values('" + newItem.sItemCode + "', '" + newItem.sItemDescription + "', " + newItem.dItemCost + ")";
->>>>>>> feature/items
+
                 return sSQL;
             }
             catch (Exception ex)
@@ -111,11 +105,9 @@ namespace CS_3280_Group_9_Project.Items
         {
             try
             {
-<<<<<<< HEAD
-                string sSQL = "Delete from ItemDesc Where ItemCode = '" + itemToDelete.iItemCode + "'";
-=======
+
                 string sSQL = "Delete from ItemDesc Where ItemCode = '" + itemToDelete.sItemCode + "'";
->>>>>>> feature/items
+
                 return sSQL;
             }
             catch (Exception ex)

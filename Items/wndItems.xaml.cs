@@ -24,13 +24,11 @@ namespace CS_3280_Group_9_Project.Items
 
         public wndItems()
         {
-<<<<<<< HEAD
+
             // Initialize the window and its components
             // TODO: configure properly
             InitializeComponent();
 
-            // Populate the data grid with the list of items from the database
-=======
             try
             {
                 InitializeComponent();
@@ -50,7 +48,6 @@ namespace CS_3280_Group_9_Project.Items
                 HandleError(MethodInfo.GetCurrentMethod().DeclaringType.Name,
                     MethodInfo.GetCurrentMethod().Name, ex.Message);
             }
->>>>>>> feature/items
         }
 
         /// <summary>
@@ -64,8 +61,6 @@ namespace CS_3280_Group_9_Project.Items
         public bool HasItemListChanged;
 
         /// <summary>
-<<<<<<< HEAD
-=======
         /// Variable to help determine whether the user is trying to add or edit an item so that the save button can perform the correct action
         /// </summary>
         private enum ItemMode { None, Add, Edit }
@@ -78,23 +73,13 @@ namespace CS_3280_Group_9_Project.Items
 
 
         /// <summary>
->>>>>>> feature/items
         /// Function to allow user to add an item
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            // Populate descriptive title label
 
-            // Clear textboxes and make them so they can be written into
-
-            // Prompt user to click the save button to save the new item to the database
-
-            // Allow Save button to be clicked
-
-=======
             // Set the current mode to add so that the save button knows to add a new item to the database instead of editing an existing item
             currentMode = ItemMode.Add;
 
@@ -120,7 +105,6 @@ namespace CS_3280_Group_9_Project.Items
 
             // Prompt user to click the save button to save the new item to the database
             txtBlckActionPrompt.Text = "Please enter the details of the new item and click the Save button to add it to the database.";
->>>>>>> feature/items
         }
 
         /// <summary>
@@ -131,14 +115,7 @@ namespace CS_3280_Group_9_Project.Items
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             // Populate descriptive title label
-<<<<<<< HEAD
 
-            // Identify current item
-
-            // Keep current data in text boxes and allow them to be written into/changed
-
-            // Allow Save button to be clicked
-=======
             lblActionTitle.Content = "Edit Item";
 
             // Set the current mode to edit so that the save button knows to edit the existing item in the database instead of adding a new item
@@ -158,7 +135,6 @@ namespace CS_3280_Group_9_Project.Items
 
             // Identify current item
             selectedItem = (clsItem)dgItems.SelectedItem;
->>>>>>> feature/items
         }
 
         /// <summary>
@@ -171,20 +147,7 @@ namespace CS_3280_Group_9_Project.Items
         /// <param name="e"></param>
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            // The save button should be able to handle both adding and editing an item, so we will need to determine which action the user is trying to perform
 
-            // Determine what action the user is trying to perform (add or edit)
-
-            // Create a new item based on the data in the text boxes
-
-            // If the user is trying to add an item, add the new item to the database
-
-            // If the user is trying to edit an item, update the existing item in the database with the new data
-
-            // Set the boolean variable to true to indicate that a change has been made to the item list
-            
-=======
             try
             {
                 // Instatiate a new item object to be added to the database with the data from the text boxes
@@ -337,7 +300,6 @@ namespace CS_3280_Group_9_Project.Items
                             MethodInfo.GetCurrentMethod().Name, ex.Message);
 
             }
->>>>>>> feature/items
         }
     }
 }

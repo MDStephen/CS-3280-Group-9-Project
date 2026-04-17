@@ -14,4 +14,10 @@
     <PackageReference Include="System.Data.OleDb" Version="10.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Items\wndItems.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

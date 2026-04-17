@@ -15,11 +15,6 @@
         <TextBox x:Name="txtbxDescription" HorizontalAlignment="Left" Margin="175,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="20"/>
         <Button x:Name="btnAdd" Content="Add Item" HorizontalAlignment="Left" Margin="54,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnAdd_Click"/>
         <Button x:Name="btnEdit" Content="Edit Item" HorizontalAlignment="Left" Margin="175,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnEdit_Click"/>
-<<<<<<< HEAD
-        <Button x:Name="btnSave" Content="Save Item" HorizontalAlignment="Left" Margin="290,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnSave_Click"/>
-        <Button x:Name="btnDelete" Content="Delete Item" HorizontalAlignment="Left" Margin="54,322,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,10,10,10"/>
-=======
         <Button x:Name="btnSave" Content="Save Item" HorizontalAlignment="Left" Margin="290,257,0,0" VerticalAlignment="Top" FontSize="20" Click="btnSave_Click" IsEnabled="False"/>
         <Button x:Name="btnDelete" Content="Delete Item" HorizontalAlignment="Left" Margin="54,322,0,0" VerticalAlignment="Top" FontSize="20" Click="btnDelete_Click"/>
         <DataGrid x:Name="dgItems" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="400,10,10,10" AutoGenerateColumns="False" SelectionChanged="dgItems_SelectionChanged" IsReadOnly="True">
@@ -32,7 +27,6 @@
         <Label x:Name="lblActionTitle" Content="" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top" FontSize="19.3"/>
         <TextBlock x:Name="txtBlckActionPrompt" HorizontalAlignment="Left" Margin="54,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="326"/>
         <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="290,322,0,0" VerticalAlignment="Top" FontSize="20" Click="btnCancel_Click" IsEnabled="False"/>
->>>>>>> feature/items
 
     </Grid>
 </Window>
