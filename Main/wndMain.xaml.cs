@@ -70,9 +70,9 @@ namespace CS_3280_Group_9_Project.Main
                 
 
                 invoiceID = 0;
-                wndMainSearch = new wndSearch();
+                //wndMainSearch = new wndSearch();
 
-                wndMainItems = new wndItems();
+                //wndMainItems = new wndItems();
 
                 eCurrentMode = InvoiceMode.None;
                 btnEdit.IsEnabled = false;
@@ -115,7 +115,7 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainSearch.ShowDialog();
+                //wndMainSearch.ShowDialog();
 
                 /* if (window.ShowDialog() == true)
                 {
@@ -123,6 +123,8 @@ namespace CS_3280_Group_9_Project.Main
                 }*/
                 //once the search window is closed the invoiceID should be set in the search window's closing event.
                 //SelectInvoice(ToString(invoiceID))
+
+                wndSearch wndMainSearch = new wndSearch();
                 if (wndMainSearch.ShowDialog() == true) { 
                     int invoiceID = wndMainSearch.SelectedInvoiceID;
 
@@ -134,7 +136,7 @@ namespace CS_3280_Group_9_Project.Main
                     txtDate.Text = UIMainLogic.clsCurrInvoice.sInvoiceDate;
                     btnEdit.IsEnabled = true;
                     DisableControls();
-            }
+                }
                 
 
             }
@@ -154,7 +156,7 @@ namespace CS_3280_Group_9_Project.Main
         {
             try
             {
-                wndMainItems.ShowDialog();
+                //wndMainItems.ShowDialog();
                 //need to update cmbItems if the items changed in the items window.
                 //For now assuming that the wndItems will be coded to update the database then i'll grab the items from there.
                 //UpdateItems()
@@ -162,9 +164,12 @@ namespace CS_3280_Group_9_Project.Main
                 wndItems itemsWindow = new wndItems();
                 if (itemsWindow.ShowDialog() == true)
                 {
-                    UIMainLogic.UpdateItems();
+
                 }
-                
+
+                UIMainLogic.UpdateItems();
+
+
 
             }
             catch (Exception ex)
