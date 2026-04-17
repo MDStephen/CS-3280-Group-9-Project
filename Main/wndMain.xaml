@@ -40,7 +40,6 @@
             </Menu>
         </StackPanel>
         <Label Content="Items on invoice" HorizontalAlignment="Left" Margin="361,7,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnTest" Content="Invoice 5000" HorizontalAlignment="Left" Margin="76,388,0,0" VerticalAlignment="Top" Click="btnTest_Click"/>
 
     </Grid>
 </Window>

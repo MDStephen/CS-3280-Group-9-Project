@@ -410,33 +410,6 @@ namespace CS_3280_Group_9_Project.Main
 
         
 
-        /// <summary>
-        /// Used just to test viewing an invoice. This is what the code will look like when an invoice gets selected
-        /// in wndSearch.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnTest_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                invoiceID = 5000;
-                UIMainLogic.SelectInvoice(invoiceID.ToString());
-                dgItems.DataContext = UIMainLogic.GetInvoiceItems();
-                dgItems.ItemsSource = UIMainLogic.GetInvoiceItems();
-                lblTotalCost.Content = "Total Cost: $" + UIMainLogic.fTotalCost;
-                lblInvoice.Content = "Invoice Number: " + invoiceID.ToString();
-                txtDate.Text = UIMainLogic.clsCurrInvoice.sInvoiceDate;
-                DisableControls();
-                btnEdit.IsEnabled=true;
-
-            }
-            catch (Exception ex)
-            {
-                HandleError(MethodInfo.GetCurrentMethod().DeclaringType.Name,
-                                    MethodInfo.GetCurrentMethod().Name, ex.Message);
-            }
-
-        }
+        
     }
 }
