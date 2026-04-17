@@ -147,4 +147,85 @@ using System.Reflection;
                 throw new Exception(MethodInfo.GetCurrentMethod().DeclaringType.Name + "." + MethodInfo.GetCurrentMethod().Name + " -> " + ex.Message);
 			}
 		}
+
+    /// <summary>
+    /// Inserts an invoice to the database.
+    /// </summary>
+    /// <param name="sSQL">SQL statement</param>
+    /// <param name="invdate">Invoice Date</param>
+    /// <param name="totalcost">Total Cost</param>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
+    public int InsertInvoice(string sSQL, string invdate, float totalcost)
+    {
+        try
+        {
+            //Number of rows affected
+            int iNumRows;
+
+            using (OleDbConnection conn = new OleDbConnection(sConnectionString))
+            {
+                //Open the connection to the database
+                conn.Open();
+
+                //Add the information for the SelectCommand using the SQL statement and the connection object
+                OleDbCommand cmd = new OleDbCommand(sSQL, conn);
+                cmd.CommandTimeout = 0;
+
+                cmd.Parameters.Add("@InvoiceDate", OleDbType.Date).Value = "#" + invdate + "#";
+                cmd.Parameters.Add("@TotalCost", OleDbType.Currency).Value = totalcost;
+
+                //Execute the non query SQL statement
+                iNumRows = cmd.ExecuteNonQuery();
+            }
+
+            //return the number of rows affected
+            return iNumRows;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(MethodInfo.GetCurrentMethod().DeclaringType.Name + "." + MethodInfo.GetCurrentMethod().Name + " -> " + ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// This inserts a line item into the database.
+    /// </summary>
+    /// <param name="sSQL">SQL statement</param>
+    /// <param name="invnum">Invoice Number</param>
+    /// <param name="linenum">Line Number</param>
+    /// <param name="itemcode">Item Code</param>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
+    public int InsertLineItem(string sSQL, string invnum, string linenum, string itemcode)
+    {
+        try
+        {
+            //Number of rows affected
+            int iNumRows;
+
+            using (OleDbConnection conn = new OleDbConnection(sConnectionString))
+            {
+                //Open the connection to the database
+                conn.Open();
+
+                //Add the information for the SelectCommand using the SQL statement and the connection object
+                OleDbCommand cmd = new OleDbCommand(sSQL, conn);
+                cmd.CommandTimeout = 0;
+
+                cmd.Parameters.Add("@InvoiceNum", OleDbType.VarChar).Value = invnum;
+                cmd.Parameters.Add("@LineItemNum", OleDbType.VarChar).Value = linenum;
+                cmd.Parameters.Add("@ItemCode", OleDbType.VarChar).Value = itemcode;
+                //Execute the non query SQL statement
+                iNumRows = cmd.ExecuteNonQuery();
+            }
+
+            //return the number of rows affected
+            return iNumRows;
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(MethodInfo.GetCurrentMethod().DeclaringType.Name + "." + MethodInfo.GetCurrentMethod().Name + " -> " + ex.Message);
+        }
+    }
 }
