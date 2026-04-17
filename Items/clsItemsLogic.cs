@@ -175,19 +175,46 @@ namespace CS_3280_Group_9_Project.Items
         /// <returns></returns>
         public static string GetNextItemCode()
         {
-            string sql = "SELECT MAX(ItemCode) FROM ItemDesc";
+            string sql = "SELECT ItemCode \r\nFROM ItemDesc \r\nORDER BY LEN(ItemCode) DESC, ItemCode DESC;\r\n";
             clsDataAccess db = new clsDataAccess();
             int iRet = 0;
 
             DataSet ds = db.ExecuteSQLStatement(sql, ref iRet);
-
             string maxCode = ds.Tables[0].Rows[0][0].ToString();
 
             if (string.IsNullOrWhiteSpace(maxCode))
-                return "A"; // first item ever
+                return "A";
 
-            char next = (char)(maxCode[0] + 1);
-            return next.ToString();
+            return IncrementCode(maxCode.Trim().ToUpper());
         }
+
+        /// <summary>
+        /// Helper funciton to increment the item code by 1, handling the case where the code reaches 'Z' and needs to roll over to 'AA', etc.
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        private static string IncrementCode(string code)
+        {
+            char[] chars = code.ToCharArray();
+
+            int i = chars.Length - 1;
+
+            while (i >= 0)
+            {
+                if (chars[i] == 'Z')
+                {
+                    chars[i] = 'A';
+                    i--;
+                }
+                else
+                {
+                    chars[i]++;
+                    return new string(chars);
+                }
+            }
+
+            return "A" + new string(chars);
+        }
+
     }
 }
