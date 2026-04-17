@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CS_3280_Group_9_Project.Items"
         mc:Ignorable="d"
+        Background="#FF252222"
         Title="wndItems" Height="450" Width="800">
     <Grid>
         <Label x:Name="lblCode" Content="Code: " HorizontalAlignment="Left" Margin="54,47,0,0" VerticalAlignment="Top" FontSize="19.3"/>

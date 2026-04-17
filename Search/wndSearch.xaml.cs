@@ -62,9 +62,18 @@ namespace CS_3280_Group_9_Project.Search
 
                 for (int i = 0; i < invoiceList.Count; i++)
                 {
-                    invoice_number_combo_box.Items.Add(invoiceList[i].ID.ToString());
-                    invoice_date_combo_box.Items.Add(invoiceList[i].Date);
-                    total_cost_combo_box.Items.Add(invoiceList[i].TotalCost.ToString());
+                    string id = invoiceList[i].ID.ToString();
+                    string date = invoiceList[i].Date;
+                    string cost = invoiceList[i].TotalCost.ToString();
+
+                    if (!invoice_number_combo_box.Items.Contains(id))
+                        invoice_number_combo_box.Items.Add(id);
+
+                    if (!invoice_date_combo_box.Items.Contains(date))
+                        invoice_date_combo_box.Items.Add(date);
+
+                    if (!total_cost_combo_box.Items.Contains(cost))
+                        total_cost_combo_box.Items.Add(cost);
                 }
             }
             catch (Exception ex)
